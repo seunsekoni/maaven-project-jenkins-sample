@@ -1,7 +1,7 @@
 pipeline {
       agent any
       stages {
-            stage('Init') {
+            stage('Initialize') {
                   steps {
                         echo 'Hi, this is Seun.'
                         echo 'We are Starting the Testing'
@@ -12,7 +12,7 @@ pipeline {
                         echo 'Building Sample Maven Project'
                   }
             }
-            stage('Deploy') {
+            stage('Deploy Staging') {
                   steps {
                         echo "Deploying in Staging Area"
                   }
